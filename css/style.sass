@@ -1,0 +1,295 @@
+body
+  margin: 0
+
+header
+  height: 685px
+  width: 100%
+  position: relative
+
+#header-image
+  height: 685px
+  max-width: 1075px
+  background-image: url(../images/header-image.jpg)
+  background-size: cover
+  -webkit-clip-path: polygon(95% 0, 0 0, 0 95%)
+  clip-path: polygon(95% 0, 0 0, 0 95%)
+
+.logo
+  position: absolute
+  top: 40px
+  left: 40px
+
+#quote-container
+  text-align: right
+  max-width: 470px
+  position: absolute
+  top: 225px
+  right: 60px
+
+
+#quote
+  font-size: 50pt
+  font-family: Dancing Script, Arial, sans-serif
+  font-weight: 300
+  line-height: 80%
+
+#author
+  font-size: 25pt
+  font-family: Dancing Script, Arial, sans-serif
+  font-weight: 300
+  color: #00a651
+
+
+.clearer
+  clear: both
+
+#content
+  max-width: 960px
+  margin-left: auto
+  margin-right: auto
+  margin-top: -100px
+  overflow: hidden
+
+.heading
+  font-family: "Open Sans"
+  font-size: 35pt
+  font-weight: 300
+  text-transform: uppercase
+  width: 100%
+  text-align: center
+  color: #00a651
+  display: block
+  clear: both
+
+
+#linnud-container
+  width: 100%
+
+.lind
+  float: left
+  width: 25%
+  box-sizing: border-box
+  padding: 10px
+
+  text-align: center
+
+  img
+    max-height: 100%
+    max-width: 100%
+
+.sub-heading
+  font-family: "Open Sans"
+  font-size: 14pt
+  font-weight: 300
+  color: #00150a
+  text-transform: uppercase
+
+#paragraph-container
+  width: 100%
+
+.underline
+  text-decoration: none
+  color: #000000
+  border-bottom: 3px solid #33be82
+  border-radius: 1px
+
+.column
+  float: left
+  width: 33.3%
+  box-sizing: border-box
+  padding: 10px
+
+  p
+    font-family: "Open Sans"
+    font-size: 10pt
+    line-height: 1.5
+
+button
+  height: 44px
+  width: 130px
+  background: url("../images/button-bg.png")
+  background-size: cover
+
+  text-align: center
+  color: #FFFFFF
+  font-family: "Open Sans"
+  font-size: 10pt
+  border: none
+  outline: none
+
+
+button:hover
+  background: url("../images/hover-button.png")
+  background-size: cover
+  -webkit-transition: background-color 0.5s
+
+#form-container
+  text-align: center
+
+  button
+    display: inline-block
+    margin-top: -20px
+
+.title
+  font-family: "Open Sans"
+  font-size: 10pt
+  font-weight: 300
+  background-color: #FFFFFF
+  margin-bottom: -15px
+  margin-left: 10px
+  position: relative
+  display: inline-block
+  float: left
+  padding: 5px
+  z-index: 10
+
+.title-question
+  font-family: "Open Sans"
+  font-size: 10pt
+  font-weight: 300
+  text-align: left
+  background-color: #FFFFFF
+  margin-bottom: -15px
+  margin-left: 10px
+  position: relative
+  display: inline-block
+  float: left
+  padding: 5px
+  z-index: 10
+
+
+.column
+  input
+    height: 50px
+    width: 100%
+    border: 2px solid #33be82
+    border-radius: 5px
+    outline: none
+
+    font-size: 15pt
+    font-family: "Open Sans"
+    font-weight: 300
+    padding-top: 5px
+
+.email-text
+  margin-bottom: 40px
+  text-align: center
+  padding: 10px
+
+  textarea
+    width: 100%
+    height: 90px
+    border: 2px solid #33be82
+    border-radius: 5px
+    outline: none
+
+    font-size: 15pt
+    font-family: "Open Sans"
+    font-weight: 300
+    padding-top: 10px
+
+footer
+  width: 100%
+  height: 200px
+  position: relative
+
+  #bird
+    height: 150px
+    width: 180px
+    position: absolute
+    bottom: 20px
+    right: 20px
+
+  #speech-bubble
+    position: absolute
+    bottom: 100px
+    right: 150px
+    visibility: hidden
+    animation: 1s fadeIn
+    animation-delay: 5s
+    animation-fill-mode: forwards
+
+
+  @keyframes fadeIn
+    0%
+      opacity: 0
+    100%
+      visibility: visible
+      opacity: 1
+
+
+
+
+@media screen and (max-width: 960px)
+
+  header
+    height: 60vh
+    margin-bottom: 20px
+
+  #content
+    margin-top: 0
+
+  .logo
+    display: none
+
+  .lind
+    width: 50%
+
+  #quote-container
+    text-align: right
+    max-width: 200px
+    position: absolute
+    background-color: white
+    opacity: 0.7
+    border-radius: 5px
+    padding-left: 20px
+    padding-right: 20px
+
+    top: 180px
+    right: 20px
+
+  #quote
+    font-size: 20pt
+    font-family: Dancing Script, Arial, sans-serif
+    font-weight: 300
+    line-height: 80%
+
+  #author
+    font-size: 14pt
+
+  #header-image
+    height: 60vh
+    width: 100%
+    -webkit-clip-path: none
+
+
+  .column
+    float: none
+    width: auto
+    margin: 0 10px 0 10px
+    padding: 0
+
+
+  .heading
+    font-size: 15pt
+
+  .sub-heading
+    font-size: 9pt
+
+  #button-div
+    text-align: center
+    margin-bottom: 20px
+
+  #form-container
+    margin-left: 5%
+    margin-right: 5%
+
+
+@media screen and (max-width: 430px)
+  #bird
+    height: 80px
+    width: 110px
+
+  #speech-bubble
+    height: 50px
+    width: 150px
